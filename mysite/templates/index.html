@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Welcome To The Text Analyzer </h1>
+    <h2>Enter Your Text Below </h2>
+
+<form action = "/analyze" method="get">
+    <textarea name ="text"style="width: 1667px; height: 257px;"></textarea><br>
+    <input type="checkbox" , name = "removepunc">Remove Punctutions <br>
+    <input type="checkbox" name="fullcaps">Capitalize <br>
+    <button type="submit" > Analyze Me</button><br>
+</form>
+</body>
+</html>
